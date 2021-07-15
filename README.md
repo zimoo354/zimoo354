@@ -13,7 +13,9 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-Hey everyone, I'm Charlie 👨🏻‍💻, and I’m a mexican software engineer 🇲🇽. I love to create amazing things and I do code @ [Resideo](https://www.resideo.com/us/en/). Based in 📍 Austin, TX 🇺🇸
+Hey everyone, I'm Charlie 👨🏻‍💻, and I’m a mexican software engineer 🇲🇽. I love to create amazing things and I do code @ [Resideo](https://www.resideo.com/us/en/). 
+
+Based in 📍 Austin, TX 🇺🇸
 
 [Twitter](https://twitter.com/zimoo354)
 [LinkedIn](https://www.linkedin.com/in/zimoo354/)
