@@ -1,8 +1,6 @@
-### Hi there 👋
+### Hi there! 👋
 
 <!--
-**zimoo354/zimoo354** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
@@ -14,3 +12,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+Hey everyone, I'm Charlie 👨🏻‍💻, and I’m a mexican software engineer 🇲🇽. I love to create amazing things and I do code @ [Resideo](https://www.resideo.com/us/en/). Based in 📍 Austin, TX 🇺🇸
+
+[Twitter](https://twitter.com/zimoo354)
+[LinkedIn](https://www.linkedin.com/in/zimoo354/)
