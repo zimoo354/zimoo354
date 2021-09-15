@@ -1,0 +1,130 @@
+@import url(https://sf.abarba.me/font.css);
+body {
+  margin: 0;
+  font-family: "SF Display", -apple-system, BlinkMacSystemFont, "Roboto",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.App a {
+  color: #0069ff;
+  text-decoration: none;
+}
+.App header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.App header img {
+  max-width: 90px;
+  opacity: 1;
+}
+@media screen and (min-width: 600px) {
+  .App header {
+    flex-direction: row;
+  }
+  .App header img {
+    margin-right: 1em;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .App header .name h1,
+  .App header .name h2 {
+    text-align: left !important;
+    margin: 0;
+  }
+  .App header .name h1 {
+    font-size: 6em !important;
+    color: #0069ff;
+  }
+  .App header .name h2 {
+    font-size: 4em;
+    color: #000;
+  }
+}
+.App header .name h1,
+.App header .name h2 {
+  text-align: center;
+  margin: 0;
+}
+.App header .name h1 {
+  font-size: 3em;
+  color: #0069ff;
+  margin-top: 8px;
+}
+.App article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.App article p {
+  font-size: 1.25em;
+  text-align: center;
+  padding: 0 12px;
+  -webkit-margin-before: 2em;
+  margin-block-start: 2em;
+  -webkit-margin-after: 2em;
+  margin-block-end: 2em;
+  color: #000;
+}
+@media screen and (min-width: 600px) {
+  .App article p {
+    font-size: 2em;
+    max-width: 28em;
+  }
+}
+.App footer ul {
+  box-sizing: border-box;
+  padding: 0 24px;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.25em;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 600px) {
+  .App footer ul {
+    max-width: 28em;
+  }
+}
+.App footer ul a {
+  position: relative;
+}
+.App footer ul a:after,
+.App footer ul a:before {
+  position: absolute;
+  transition: 0.1s ease-out;
+  opacity: 0;
+}
+.App footer ul a:before {
+  content: "[";
+  left: -6px;
+}
+.App footer ul a:after {
+  content: "]";
+  right: -6px;
+}
+.App footer ul a:hover:after,
+.App footer ul a:hover:before {
+  opacity: 1;
+}
+.App footer ul a:hover:before {
+  content: "[";
+  left: -24px;
+}
+.App footer ul a:hover:after {
+  content: "]";
+  right: -24px;
+}
