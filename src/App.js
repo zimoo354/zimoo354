@@ -29,8 +29,15 @@ function App() {
       <article>
         <p>
           I’m a mexican software engineer. I love to create amazing things and I
-          do code @ <a href="https://resideo.com">Resideo</a>. Based in Austin,
-          TX 
+          do code @{" "}
+          <a
+            href="https://wenewlabs.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span style={{ color: "#A68A41" }}>WENEW</span>
+          </a>
+          . Based in Austin, TX
         </p>
       </article>
       <footer>

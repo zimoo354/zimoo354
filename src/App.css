@@ -1,5 +1,13 @@
+:root {
+  /* --accent-color: #0069ff; */
+  --background-color: #FBF5F3;
+  --accent-color: #A68A41;
+  --text-color: #423E3B;
+}
+
 @import url(https://sf.abarba.me/font.css);
 body {
+  background-color: var(--background-color);
   margin: 0;
   font-family: "SF Display", -apple-system, BlinkMacSystemFont, "Roboto",
     sans-serif;
@@ -14,7 +22,7 @@ body {
   height: 100vh;
 }
 .App a {
-  color: #0069ff;
+  color: var(--accent-color);
   text-decoration: none;
 }
 .App header {
@@ -26,15 +34,15 @@ body {
 }
 .App header img {
   max-width: 90px;
-  opacity: 1;
 }
+
 @media screen and (min-width: 600px) {
   .App header {
     flex-direction: row;
   }
   .App header img {
     margin-right: 1em;
-    max-width: 100%;
+    max-width: 190px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -45,11 +53,11 @@ body {
   }
   .App header .name h1 {
     font-size: 6em !important;
-    color: #0069ff;
+    color: var(--accent-color);
   }
   .App header .name h2 {
     font-size: 4em;
-    color: #000;
+    color: var(--text-color);
   }
 }
 .App header .name h1,
@@ -59,7 +67,7 @@ body {
 }
 .App header .name h1 {
   font-size: 3em;
-  color: #0069ff;
+  color: var(--accent-color);
   margin-top: 8px;
 }
 .App article {
@@ -76,7 +84,7 @@ body {
   margin-block-start: 2em;
   -webkit-margin-after: 2em;
   margin-block-end: 2em;
-  color: #000;
+  color: var(--text-color);
 }
 @media screen and (min-width: 600px) {
   .App article p {
