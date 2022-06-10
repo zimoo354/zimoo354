@@ -35,7 +35,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span style={{ color: "#A68A41" }}>WENEW</span>
+            WENEW
           </a>
           . Based in Austin, TX
         </p>
