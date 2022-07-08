@@ -13,7 +13,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-Hey everyone, I'm Charlie 👨🏻‍💻, and I’m a mexican software engineer 🇲🇽. I love to create amazing things and I do code @ [Resideo](https://www.resideo.com/us/en/). 
+Hey everyone, I'm Charlie 👨🏻‍💻, and I’m a mexican software engineer 🇲🇽. I love to create amazing things and I do code @ [WENEW](http://wenewlabs.xyz/). 
 
 Based in 📍 Austin, TX 🇺🇸
 
