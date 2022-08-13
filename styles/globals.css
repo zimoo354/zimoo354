@@ -32,7 +32,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.App header img {
+.App header .img {
   max-width: 90px;
 }
 
@@ -40,7 +40,7 @@ body {
   .App header {
     flex-direction: row;
   }
-  .App header img {
+  .App header .img {
     margin-right: 1em;
     max-width: 190px;
   }

@@ -25,12 +25,14 @@ const Home: NextPage = () => {
       </Head>
       <div className="App">
         <header className="App-header">
-          <Image
-            src="/charlie.png"
-            alt="Charlie Ruiz"
-            height={160}
-            width={160}
-          />
+          <div className="img">
+            <Image
+              src="/charlie.png"
+              alt="Charlie Ruiz"
+              height={160}
+              width={160}
+            />
+          </div>
           <div className="name">
             <h1>Charlie Ruiz</h1>
             <h2>Software engineer</h2>
