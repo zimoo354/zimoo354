@@ -4,17 +4,21 @@ import Image from "next/image";
 
 const links = [
   {
-    text: "github",
-    url: "https://github.com/zimoo354",
-  },
-  {
     text: "linkedin",
     url: "https://www.linkedin.com/in/zimoo354/",
   },
   {
-    text: "twitter",
-    url: "https://twitter.com/zimoo354",
+    text: "resume",
+    url: "/pdf/CVCarlosRuiz.pdf",
   },
+  {
+    text: "github",
+    url: "https://github.com/zimoo354",
+  },
+  // {
+  //   text: "twitter",
+  //   url: "https://twitter.com/zimoo354",
+  // },
 ];
 
 const Home: NextPage = () => {
@@ -40,23 +44,21 @@ const Home: NextPage = () => {
         </header>
         <article>
           <p>
-            I’m a mexican software engineer. I love to create amazing things and
-            I do code @{" "}
-            <a
-              href="https://wenewlabs.xyz/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WENEW
-            </a>
-            . Based in Austin, TX
+            I'm an experienced Software Engineer passionate about crafting
+            high-performance solutions. I'm experienced in JS/TS, Solidity,
+            SQL/No-SQL, and AWS.
+            <br />
+            <br />
+            <b>📍 Austin, TX</b>
           </p>
         </article>
         <footer>
           <ul>
             {links.map((el, idx) => (
               <li key={`Link-${idx}`}>
-                <a href={el.url}>{el.text}</a>
+                <a href={el.url} target="_blank">
+                  {el.text}
+                </a>
               </li>
             ))}
           </ul>

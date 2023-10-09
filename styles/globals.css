@@ -1,8 +1,8 @@
 :root {
   /* --accent-color: #0069ff; */
-  --background-color: #FBF5F3;
-  --accent-color: #A68A41;
-  --text-color: #423E3B;
+  --background-color: #eeeeee;
+  --accent-color: #176b87;
+  --text-color: #053b50;
 }
 
 @import url(https://sf.abarba.me/font.css);
@@ -109,6 +109,13 @@ body {
 }
 .App footer ul a {
   position: relative;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+  .App footer ul a {
+    font-size: 1.25rem;
+  }
 }
 .App footer ul a:after,
 .App footer ul a:before {
