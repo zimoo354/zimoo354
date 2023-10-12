@@ -44,9 +44,12 @@ const Home: NextPage = () => {
         </header>
         <article>
           <p>
-            I'm an experienced Software Engineer passionate about crafting
-            high-performance solutions. I'm experienced in JS/TS, Solidity,
-            SQL/No-SQL, and AWS.
+            <b>Hi there!</b>
+            <br />
+            <br />
+            I'm a SWE with 9-yoe. Proficient in Javascript/Typescript, React,
+            Next.js, Solidity, SQL/No-SQL, AWS, and more, with diverse skills
+            and leadership experience.
             <br />
             <br />
             <b>📍 Austin, TX</b>
