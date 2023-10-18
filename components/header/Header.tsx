@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="flex items-center w-full justify-between p-4">
+    <header className="flex items-center w-full justify-between p-4 print:hidden">
       <Link href="/">
         <Image
           alt="Charlie Ruiz"
