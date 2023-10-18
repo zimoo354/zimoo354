@@ -1,6 +1,24 @@
 import { JobExperienceProps } from "@/components/common/JobExperience";
 import { SocialLinkProps } from "@/components/common/SocialLink";
 
+export const LINKS = [
+  {
+    label: "Home",
+    url: "/",
+    classes: "delay-100",
+  },
+  {
+    label: "Resume",
+    url: "/resume",
+    classes: "delay-200",
+  },
+  {
+    label: "Blog",
+    url: "/blog",
+    classes: "delay-300",
+  },
+];
+
 export const CONTENT: Record<string, any> & {
   fullName: string;
   jobTitle: string;
