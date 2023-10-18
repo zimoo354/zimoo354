@@ -6,6 +6,7 @@ export const HOMEPAGE_CONTENT: Record<string, any> & {
   jobTitle: string;
   statement: string | JSX.Element;
   socialLinks: SocialLinkProps[];
+  education: JobExperienceProps;
   jobExperiences: JobExperienceProps[];
 } = {
   fullName: "Charlie Ruiz",
@@ -17,32 +18,16 @@ export const HOMEPAGE_CONTENT: Record<string, any> & {
       leadership experience.
     </>
   ),
-  socialLinks: [
-    {
-      image: "/images/social/linkedin.webp",
-      title: "LinkedIn",
-      subtitle: "linkedin.com/in/zimoo354",
-      url: "https://www.linkedin.com/in/zimoo354",
-    },
-    {
-      image: "/images/social/github.webp",
-      title: "GitHub",
-      subtitle: "github.com/zimoo354",
-      url: "https://github.com/zimoo354",
-    },
-    {
-      image: "/images/social/x.webp",
-      title: "X (formerly Twitter)",
-      subtitle: "x.com/zimoo354",
-      url: "https://x.com/zimoo354",
-    },
-    {
-      image: "/images/social/resume.webp",
-      title: "Resume",
-      subtitle: "CVCharlieRuiz",
-      url: "/pdf/CVCharlieRuiz.pdf",
-    },
-  ],
+  education: {
+    image: "/images/work/yuga.webp",
+    jobTitle: "Sr. Software Engineer",
+    companyName: "Yuga Labs",
+    startDate: "Jun 2022",
+    endDate: "Oct 2023",
+    location: "Austin, TX (Remote)",
+    children:
+      "Led technically a web3 physical/digital collaboration with Gucci that generated ~$6 Million in revenue in 24 hours. Built Opensea-like capability for our internal testnet; resulted in savings of 60 hrs/wk in QA testing effort. Worked in multiple smart-contracts life-cycle. Wrote multiple documents on team-culture, beginners guides and tech specs. Designed and implemented a blockchain + shopify purchase flow. Used Next.js, Typescript, SQL, AWS & Solidity.",
+  },,
   jobExperiences: [
     {
       image: "/images/work/yuga.webp",
@@ -113,6 +98,32 @@ export const HOMEPAGE_CONTENT: Record<string, any> & {
       location: "Queretaro, Mexico",
       children:
         "Built & maintained +50 web apps mainly for e-commerce & real estate. Used PHP, SQL, Wordpress & CentOS servers with Nginx.",
+    },
+  ],
+  socialLinks: [
+    {
+      image: "/images/social/linkedin.webp",
+      title: "LinkedIn",
+      subtitle: "linkedin.com/in/zimoo354",
+      url: "https://www.linkedin.com/in/zimoo354",
+    },
+    {
+      image: "/images/social/github.webp",
+      title: "GitHub",
+      subtitle: "github.com/zimoo354",
+      url: "https://github.com/zimoo354",
+    },
+    {
+      image: "/images/social/x.webp",
+      title: "X (formerly Twitter)",
+      subtitle: "x.com/zimoo354",
+      url: "https://x.com/zimoo354",
+    },
+    {
+      image: "/images/social/resume.webp",
+      title: "Resume",
+      subtitle: "CVCharlieRuiz",
+      url: "/pdf/CVCharlieRuiz.pdf",
     },
   ],
 };

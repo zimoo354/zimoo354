@@ -39,3 +39,7 @@ p {
 .job-experience {
   break-inside: avoid;
 }
+
+* {
+  font-family: "SF Pro", "Inter";
+}
