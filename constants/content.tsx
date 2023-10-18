@@ -27,7 +27,7 @@ export const HOMEPAGE_CONTENT: Record<string, any> & {
     location: "Austin, TX (Remote)",
     children:
       "Led technically a web3 physical/digital collaboration with Gucci that generated ~$6 Million in revenue in 24 hours. Built Opensea-like capability for our internal testnet; resulted in savings of 60 hrs/wk in QA testing effort. Worked in multiple smart-contracts life-cycle. Wrote multiple documents on team-culture, beginners guides and tech specs. Designed and implemented a blockchain + shopify purchase flow. Used Next.js, Typescript, SQL, AWS & Solidity.",
-  },,
+  },
   jobExperiences: [
     {
       image: "/images/work/yuga.webp",
