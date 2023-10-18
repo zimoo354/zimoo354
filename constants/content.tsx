@@ -1,5 +1,5 @@
-import { JobExperienceProps } from "@/components/JobExperience";
-import { SocialLinkProps } from "@/components/SocialLink";
+import { JobExperienceProps } from "@/components/common/JobExperience";
+import { SocialLinkProps } from "@/components/common/SocialLink";
 
 export const HOMEPAGE_CONTENT: Record<string, any> & {
   statement: string | JSX.Element;

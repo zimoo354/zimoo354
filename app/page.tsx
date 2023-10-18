@@ -1,6 +1,8 @@
-import { ContentBlock } from "@/components/ContentBlock";
-import { JobExperience } from "@/components/JobExperience";
-import { SocialLink } from "@/components/SocialLink";
+import { ContentBlock } from "@/components/common/ContentBlock";
+import { JobExperience } from "@/components/common/JobExperience";
+import { SocialLink } from "@/components/common/SocialLink";
+import { PastExperience } from "@/components/past-experience";
+import { SocialLinks } from "@/components/social-links";
 import { HOMEPAGE_CONTENT } from "@/constants/content";
 import Image from "next/image";
 
@@ -31,26 +33,14 @@ const Home = () => {
             <p>{statement}</p>
           </ContentBlock>
           <div className="hidden lg:block">
-            <ContentBlock title="Links">
-              {socialLinks.map((link) => (
-                <SocialLink key={link.title} {...link} />
-              ))}
-            </ContentBlock>
+            <SocialLinks />
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-12 w-full lg:w-3/5 lg:min-h-screen">
-        <ContentBlock title="Experience">
-          {jobExperiences.map((position) => (
-            <JobExperience key={position.companyName} {...position} />
-          ))}
-        </ContentBlock>
+        <PastExperience />
         <div className="block lg:hidden">
-          <ContentBlock title="Links">
-            {socialLinks.map((link) => (
-              <SocialLink key={link.title} {...link} />
-            ))}
-          </ContentBlock>
+          <SocialLinks />
         </div>
       </div>
     </article>
