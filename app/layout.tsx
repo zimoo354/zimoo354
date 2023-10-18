@@ -1,6 +1,8 @@
+import { PRODUCTION } from "@/lib/env";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { DarkModeToggle } from "@/components/common/DarkModeToggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {!PRODUCTION && <DarkModeToggle />}
         <main className="block m-auto max-w-7xl">{children}</main>
       </body>
     </html>

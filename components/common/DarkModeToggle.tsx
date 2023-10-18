@@ -13,7 +13,7 @@ export const DarkModeToggle = () => {
 
   return (
     <button
-      className="fixed top-2 left-2 py-4 px-12 bg-slate-100 text-slate-900"
+      className="fixed top-2 left-2 py-4 px-12 bg-slate-100 text-slate-900 z-50"
       onClick={toggleDarkmode}
     >
       Toggle Darkmode
