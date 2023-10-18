@@ -1,8 +1,8 @@
-import { HOMEPAGE_CONTENT } from "@/constants/content";
+import { CONTENT } from "@/constants/content";
 import { JobExperience } from "@/components/common/JobExperience";
 import { ContentBlock } from "@/components/common/ContentBlock";
 
-const { education, jobExperiences } = HOMEPAGE_CONTENT;
+const { education, jobExperiences } = CONTENT;
 
 export const PastExperience = () => (
   <>

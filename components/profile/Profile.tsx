@@ -1,21 +1,44 @@
-import { HOMEPAGE_CONTENT } from "@/constants/content";
+import { CONTENT } from "@/constants/content";
+import { classNames } from "@/utils/strings";
 import Image from "next/image";
 
-const { fullName, jobTitle } = HOMEPAGE_CONTENT;
+const { fullName, jobTitle } = CONTENT;
 
-export const Profile = () => (
-  <div className="flex flex-col items-center lg:pl-8">
+type ProfileProps = {
+  homepage?: boolean;
+};
+
+export const Profile = ({ homepage = false }: ProfileProps) => (
+  <div
+    className={classNames(
+      "flex flex-col items-center",
+      homepage ? "" : "lg:pl-8"
+    )}
+  >
     <Image
       src="/images/profile.webp"
       alt={fullName}
-      height={160}
-      width={160}
-      className="rounded-full mb-4 shadow-md print:hidden"
+      height={256}
+      width={256}
+      className={classNames(
+        "rounded-full shadow-md print:hidden",
+        homepage ? "w-56 mb-8" : "w-40 mb-4"
+      )}
     />
-    <h1 className="text-6xl font-semibold mb-2 tracking-wide text-center text-slate-800 dark:text-slate-100">
+    <h1
+      className={classNames(
+        "font-semibold mb-2 tracking-wide text-center text-slate-800 dark:text-slate-100",
+        homepage ? "text-8xl" : "text-6xl"
+      )}
+    >
       {fullName}
     </h1>
-    <h3 className="text-2xl font-medium pl-2 text-slate-500 dark:text-slate-300 tracking-wide text-center">
+    <h3
+      className={classNames(
+        "font-medium pl-2 text-slate-500 dark:text-slate-300 tracking-wide text-center",
+        homepage ? "text-4xl" : "text-2xl"
+      )}
+    >
       {jobTitle}
     </h3>
   </div>

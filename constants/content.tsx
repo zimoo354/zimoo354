@@ -1,7 +1,7 @@
 import { JobExperienceProps } from "@/components/common/JobExperience";
 import { SocialLinkProps } from "@/components/common/SocialLink";
 
-export const HOMEPAGE_CONTENT: Record<string, any> & {
+export const CONTENT: Record<string, any> & {
   fullName: string;
   jobTitle: string;
   statement: string | JSX.Element;
@@ -18,6 +18,7 @@ export const HOMEPAGE_CONTENT: Record<string, any> & {
       leadership experience.
     </>
   ),
+  location: "📍 Austin, TX",
   jobExperiences: [
     {
       image: "/images/work/yuga.webp",

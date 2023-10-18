@@ -1,8 +1,8 @@
 import { ContentBlock } from "@/components/common/ContentBlock";
 import { SocialLink } from "@/components/common/SocialLink";
-import { HOMEPAGE_CONTENT } from "@/constants/content";
+import { CONTENT } from "@/constants/content";
 
-const { socialLinks } = HOMEPAGE_CONTENT;
+const { socialLinks } = CONTENT;
 
 export const SocialLinks = () => (
   <ContentBlock title="Links">

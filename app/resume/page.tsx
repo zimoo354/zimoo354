@@ -2,9 +2,9 @@ import { ContentBlock } from "@/components/common/ContentBlock";
 import { PastExperience } from "@/components/past-experience";
 import { Profile } from "@/components/profile";
 import { SocialLinks } from "@/components/social-links";
-import { HOMEPAGE_CONTENT } from "@/constants/content";
+import { CONTENT } from "@/constants/content";
 
-const { statement } = HOMEPAGE_CONTENT;
+const { statement } = CONTENT;
 
 const Home = () => {
   return (
