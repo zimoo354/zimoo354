@@ -12,6 +12,8 @@ export const HeaderMenu = () => {
     setOpen((isOpen) => !isOpen);
   };
 
+  const delayClasses = ["delay-100", "delay-200", "delay-300"];
+
   return (
     <div className="flex items-center">
       <ul className="flex gap-4 mr-8">
@@ -23,7 +25,7 @@ export const HeaderMenu = () => {
               open
                 ? "translate-x-0 opacity-1"
                 : "translate-x-4 opacity-0 pointer-events-none",
-              `delay-${(open ? LINKS.length - idx : idx) * 100}`
+              delayClasses[open ? LINKS.length - idx - 1 : idx]
             )}
           >
             <Link href={url} onClick={toggle}>
