@@ -1,16 +1,15 @@
 import { createClient } from "contentful";
+import {
+  PRODUCTION,
+  CMS_SPACE_ID,
+  CMS_PREVIEW_APIKEY,
+  CMS_DELIVERY_APIKEY,
+} from "@/lib/env";
 
-const {
-  PRODUCTION = "",
-  CMS_SPACE_ID = "",
-  CMS_DELIVERY_APIKEY = "",
-  CMS_PREVIEW_APIKEY = "",
-} = process.env;
-
-const sandbox = PRODUCTION != "1";
+PRODUCTION;
 
 export const cmsClient = createClient({
   space: CMS_SPACE_ID,
-  accessToken: sandbox ? CMS_PREVIEW_APIKEY : CMS_DELIVERY_APIKEY,
-  ...(sandbox ? { host: "preview.contentful.com" } : {}),
+  accessToken: !PRODUCTION ? CMS_PREVIEW_APIKEY : CMS_DELIVERY_APIKEY,
+  ...(!PRODUCTION ? { host: "preview.contentful.com" } : {}),
 });

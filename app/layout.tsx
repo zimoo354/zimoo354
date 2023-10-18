@@ -1,13 +1,8 @@
-import { DarkModeToggle } from "@/components/DarkModeToggle";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-
-const { PRODUCTION: RAW_PRODUCTION_FLAG } = process.env;
-
-const PRODUCTION = Number(RAW_PRODUCTION_FLAG);
 
 export const metadata: Metadata = {
   icons: "/favicon.png",
@@ -23,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* {!PRODUCTION && <DarkModeToggle />} */}
         <main className="w-screen block m-auto max-w-7xl">{children}</main>
       </body>
     </html>
