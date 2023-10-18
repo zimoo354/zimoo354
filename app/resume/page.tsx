@@ -1,4 +1,5 @@
 import { ContentBlock } from "@/components/common/ContentBlock";
+import { PageWrapper } from "@/components/common/PageWrapper";
 import { PastExperience } from "@/components/past-experience";
 import { Profile } from "@/components/profile";
 import { SocialLinks } from "@/components/social-links";
@@ -8,7 +9,7 @@ const { statement } = CONTENT;
 
 const Home = () => {
   return (
-    <article className="flex flex-col lg:flex-row gap-8 min-h-screen relative pt-8">
+    <PageWrapper className="flex flex-col lg:flex-row gap-8 relative">
       <div className="w-full lg:w-2/5 lg:min-h-screen">
         <div className="flex flex-col gap-12 sticky top-12">
           <Profile />
@@ -26,7 +27,7 @@ const Home = () => {
           <SocialLinks />
         </div>
       </div>
-    </article>
+    </PageWrapper>
   );
 };
 
