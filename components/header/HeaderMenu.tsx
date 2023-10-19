@@ -9,7 +9,8 @@ export const HeaderMenu = () => {
   const [open, setOpen] = useState(false);
 
   const toggle = () => {
-    setOpen((isOpen) => !isOpen);
+    // setOpen((isOpen) => !isOpen);
+    setOpen((isOpen) => true);
   };
 
   const delayClasses = ["delay-100", "delay-200", "delay-300"];
