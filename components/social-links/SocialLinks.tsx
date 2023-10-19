@@ -5,7 +5,7 @@ import { CONTENT } from "@/constants/content";
 const { socialLinks } = CONTENT;
 
 export const SocialLinks = () => (
-  <ContentBlock title="Links">
+  <ContentBlock title="Links" className="flex flex-wrap lg:flex-col">
     {socialLinks.map((link) => (
       <SocialLink key={link.title} {...link} />
     ))}
