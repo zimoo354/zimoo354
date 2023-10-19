@@ -11,7 +11,7 @@ type ProfileProps = {
 export const Profile = ({ homepage = false }: ProfileProps) => (
   <div
     className={classNames(
-      "flex flex-col items-center",
+      "flex flex-col items-center text-center print:text-left print:items-start print:pl-8",
       homepage ? "" : "lg:pl-8"
     )}
   >
@@ -27,7 +27,7 @@ export const Profile = ({ homepage = false }: ProfileProps) => (
     />
     <h1
       className={classNames(
-        "font-semibold mb-2 tracking-wide text-center text-slate-800 dark:text-slate-100",
+        "font-semibold mb-2 tracking-wide text-slate-800 dark:text-slate-100 print:text-4xl",
         homepage ? "text-8xl" : "text-6xl"
       )}
     >
@@ -35,7 +35,7 @@ export const Profile = ({ homepage = false }: ProfileProps) => (
     </h1>
     <h3
       className={classNames(
-        "font-medium pl-2 text-slate-500 dark:text-slate-300 tracking-wide text-center",
+        "font-medium pl-2 print:pl-0 text-slate-500 dark:text-slate-300 tracking-wide print:text-2xl",
         homepage ? "text-4xl" : "text-2xl"
       )}
     >

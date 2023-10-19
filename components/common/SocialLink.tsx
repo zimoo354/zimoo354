@@ -13,7 +13,7 @@ export const SocialLink = ({
   url,
   subtitle,
 }: SocialLinkProps) => (
-  <a href={url} target="_blank">
+  <a href={url} target="_blank" className="block w-1/2 lg:w-full">
     <div className="flex gap-4 items-center mb-4 lg:hover:translate-x-2 transition-all">
       <Image
         src={image}

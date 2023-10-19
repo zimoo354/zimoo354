@@ -1,9 +1,11 @@
-"use client";
-
 import { LINKS } from "@/constants/content";
 import { classNames } from "@/utils/strings";
 import Link from "next/link";
 import { useState } from "react";
+
+const menuBarsClasses =
+  "w-12 h-1 bg-black dark:bg-white absolute left-1/2 -translate-y-1/2 -translate-x-1/2 transition-all";
+const delayClasses = ["delay-100", "delay-200", "delay-300"];
 
 export const HeaderMenu = () => {
   const [open, setOpen] = useState(false);
@@ -12,8 +14,6 @@ export const HeaderMenu = () => {
     setOpen((isOpen) => !isOpen);
   };
 
-  const delayClasses = ["delay-100", "delay-200", "delay-300"];
-
   return (
     <div className="flex items-center">
       <ul className="flex gap-4 mr-8">
@@ -21,7 +21,7 @@ export const HeaderMenu = () => {
           <li
             key={url}
             className={classNames(
-              "transition-all",
+              "transition-all uppercase font-semibold",
               open
                 ? "translate-x-0 opacity-1"
                 : "translate-x-4 opacity-0 pointer-events-none",
@@ -42,14 +42,14 @@ export const HeaderMenu = () => {
         <div
           id="top-line"
           className={classNames(
-            "w-12 h-1 bg-black absolute left-1/2 -translate-y-1/2 -translate-x-1/2 transition-all",
+            menuBarsClasses,
             open ? "rotate-45" : "-translate-y-2"
           )}
         />
         <div
           id="bottom-line"
           className={classNames(
-            "w-12 h-1 bg-black absolute left-1/2 -translate-y-1/2 -translate-x-1/2 transition-all",
+            menuBarsClasses,
             open ? "-rotate-45" : "translate-y-2"
           )}
         />

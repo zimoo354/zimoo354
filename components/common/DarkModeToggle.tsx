@@ -1,5 +1,3 @@
-"use client";
-
 export const DarkModeToggle = () => {
   const toggleDarkmode = () => {
     const classes = Array.from(document.documentElement.classList);

@@ -11,7 +11,7 @@ export const Header = () => {
           src="/images/logo.webp"
           width={164}
           height={68}
-          className="w-24"
+          className="w-24 dark:invert dark:brightness-0"
         />
       </Link>
       <HeaderMenu />
