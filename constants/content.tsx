@@ -8,13 +8,13 @@ export const LINKS = [
     classes: "delay-100",
   },
   {
-    label: "Portfolio",
-    url: "/portfolio",
+    label: "Resume",
+    url: "/resume",
     classes: "delay-200",
   },
   {
-    label: "Blog",
-    url: "/blog",
+    label: "Portfolio",
+    url: "/portfolio",
     classes: "delay-300",
   },
 ];
@@ -22,20 +22,30 @@ export const LINKS = [
 export const CONTENT: Record<string, any> & {
   fullName: string;
   jobTitle: string;
+  resumeStatement: string;
   statement: string | JSX.Element;
   socialLinks: SocialLinkProps[];
   education: JobExperienceProps;
   jobExperiences: JobExperienceProps[];
 } = {
   fullName: "Charlie Ruiz",
-  jobTitle: "Senior Software Engineer",
+  jobTitle: "Software Engineer",
   statement: (
     <>
-      I&apos;m a SWE with 9-yoe. Proficient in Javascript/Typescript, React,
-      Next.js, Solidity, SQL/No-SQL, AWS, and more, with diverse skills and
-      leadership experience.
+      <b>Hi there! 👋🏻</b>
+      <br />
+      <br />
+      I'm a Front-end leaning, Full-stack Software engineer with 9 years of
+      experience. Proficient in{" "}
+      <b>Javascript/Typescript, React, Next.js, Solidity, SQL/No-SQL, AWS</b>,
+      and more, with diverse skills and leadership experience.
+      <br />
+      <br />
+      <span className="font-semibold">📍 Austin, TX</span>
     </>
   ),
+  resumeStatement:
+    "I'm a SWE with 9-yoe. Proficient in Javascript/Typescript, React, Next.js, Solidity, SQL/No-SQL, AWS, and more, with diverse skills and leadership experience.",
   location: "📍 Austin, TX",
   jobExperiences: [
     {

@@ -5,7 +5,7 @@ import { Profile } from "@/components/profile";
 import { SocialLinks } from "@/components/social-links";
 import { CONTENT } from "@/constants/content";
 
-const { statement } = CONTENT;
+const { resumeStatement } = CONTENT;
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
         <div className="flex flex-col gap-12 sticky top-12">
           <Profile />
           <ContentBlock title="Statement">
-            <p>{statement}</p>
+            <p>{resumeStatement}</p>
           </ContentBlock>
           <div className="hidden lg:block">
             <SocialLinks />
