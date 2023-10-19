@@ -8,8 +8,8 @@ export const LINKS = [
     classes: "delay-100",
   },
   {
-    label: "Resume",
-    url: "/resume",
+    label: "Portfolio",
+    url: "/portfolio",
     classes: "delay-200",
   },
   {

@@ -1,13 +1,13 @@
 import { PageWrapper } from "@/components/common/PageWrapper";
 
-const Blog = () => {
+const Portfolio = () => {
   return (
-    <PageWrapper className="flex flex-col lg:flex-row gap-8 relative">
+    <PageWrapper className="flex flex-col px-8 relative">
       <h1 className="text-[200px] text-slate-200 font-bold text-center">
-        BLOG
+        PORTFOLIO
       </h1>
     </PageWrapper>
   );
 };
 
-export default Blog;
+export default Portfolio;
