@@ -13,6 +13,7 @@
     "@contentful/rich-text-react-renderer": "^15.18.0",
     "@geist-ui/core": "^2.3.8",
     "contentful": "^10.6.2",
+    "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
