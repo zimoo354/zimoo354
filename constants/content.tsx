@@ -1,4 +1,5 @@
 import { JobExperienceProps } from "@/components/common/JobExperience";
+import { PortfolioItemProps } from "@/components/common/PortfolioItem";
 import { SocialLinkProps } from "@/components/common/SocialLink";
 
 export const LINKS = [
@@ -27,6 +28,7 @@ export const CONTENT: Record<string, any> & {
   socialLinks: SocialLinkProps[];
   education: JobExperienceProps;
   jobExperiences: JobExperienceProps[];
+  portfolioItems: PortfolioItemProps[];
 } = {
   fullName: "Charlie Ruiz",
   jobTitle: "Software Engineer",
@@ -138,6 +140,38 @@ export const CONTENT: Record<string, any> & {
     location: "GPA 93 / 100",
     children: "",
   },
+  portfolioItems: [
+    {
+      title: "Kodapendant",
+      videoUrl: "/videos/kodapendant.mp4",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis at, consequatur cum quo deleniti nam sed soluta, iste facere eius odit optio veniam quidem rerum qui fugit adipisci magni quam.",
+      imageUrl: "https://via.placehold.it/640x480?text=Kodapendant",
+      link: "#",
+    },
+    {
+      title: "Battle.Town",
+      videoUrl: "/videos/bt.mp4",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis at, consequatur cum quo deleniti nam sed soluta, iste facere eius odit optio veniam quidem rerum qui fugit adipisci magni quam.",
+      imageUrl: "https://via.placehold.it/640x480?text=Bt",
+      link: "#",
+    },
+    {
+      title: "Slipstream",
+      videoUrl: "/videos/slipstream.mp4",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis at, consequatur cum quo deleniti nam sed soluta, iste facere eius odit optio veniam quidem rerum qui fugit adipisci magni quam.",
+      imageUrl: "https://via.placehold.it/640x480?text=Slipstream",
+    },
+    {
+      title: "Renga",
+      videoUrl: "/videos/renga.mp4",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis at, consequatur cum quo deleniti nam sed soluta, iste facere eius odit optio veniam quidem rerum qui fugit adipisci magni quam.",
+      imageUrl: "https://via.placehold.it/640x480?text=Renga",
+    },
+  ],
   socialLinks: [
     {
       image: "/images/social/linkedin.webp",
