@@ -8,7 +8,7 @@ type PageWrapperProps = PropsWithChildren & {
 export const PageWrapper = ({ children, className }: PageWrapperProps) => {
   return (
     <article
-      className={classNames("min-h-screen pt-8", className ? className : "")}
+      className={classNames("min-h-fit pt-8", className ? className : "")}
     >
       {children}
     </article>
