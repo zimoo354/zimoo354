@@ -22,7 +22,7 @@ export const HeaderMenu = ({ alwaysVisible = true }) => {
           <li
             key={url}
             className={classNames(
-              "transition-all uppercase font-semibold",
+              "transition-all uppercase font-light",
               open
                 ? "translate-x-0 opacity-1"
                 : "translate-x-4 opacity-0 pointer-events-none",

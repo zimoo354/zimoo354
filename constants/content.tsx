@@ -207,7 +207,7 @@ export const CONTENT: Record<string, any> & {
     {
       image: "/images/social/resume.webp",
       title: "Resume",
-      subtitle: "CVCharlieRuiz",
+      subtitle: "Click Here!",
       url: "/pdf/CVCharlieRuiz.pdf",
     },
   ],
