@@ -24,7 +24,7 @@ export const HeaderMenu = () => {
           <li
             key={url}
             className={classNames(
-              "transition-all uppercase font-light",
+              "transition-all uppercase font-light text-sm lg:text-md",
               open
                 ? "translate-x-0 opacity-1"
                 : "translate-x-4 opacity-0 pointer-events-none",
