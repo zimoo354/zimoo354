@@ -1,74 +1,18 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import { PageWrapper } from "@/components/common/PageWrapper";
+import { Profile } from "@/components/profile";
+import { CONTENT } from "@/constants/content";
 
-const links = [
-  {
-    text: "linkedin",
-    url: "https://www.linkedin.com/in/zimoo354/",
-  },
-  {
-    text: "resume",
-    url: "/pdf/CVCarlosRuiz.pdf",
-  },
-  {
-    text: "github",
-    url: "https://github.com/zimoo354",
-  },
-  // {
-  //   text: "twitter",
-  //   url: "https://twitter.com/zimoo354",
-  // },
-];
+const { statement, location } = CONTENT;
 
-const Home: NextPage = () => {
+const Homepage = () => {
   return (
-    <>
-      <Head>
-        <title>Charlie Ruiz 🧑🏻‍💻</title>
-      </Head>
-      <div className="App">
-        <header className="App-header">
-          <div className="img">
-            <Image
-              src="/charlie.png"
-              alt="Charlie Ruiz"
-              height={160}
-              width={160}
-            />
-          </div>
-          <div className="name">
-            <h1>Charlie Ruiz</h1>
-            <h2>Software engineer</h2>
-          </div>
-        </header>
-        <article>
-          <p>
-            <b>Hi there!</b>
-            <br />
-            <br />
-            I'm a SWE with 9-yoe. Proficient in Javascript/Typescript, React,
-            Next.js, Solidity, SQL/No-SQL, AWS, and more, with diverse skills
-            and leadership experience.
-            <br />
-            <br />
-            <b>📍 Austin, TX</b>
-          </p>
-        </article>
-        <footer>
-          <ul>
-            {links.map((el, idx) => (
-              <li key={`Link-${idx}`}>
-                <a href={el.url} target="_blank">
-                  {el.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </footer>
+    <PageWrapper className="flex flex-col items-center gap-12">
+      <Profile homepage />
+      <div className="lg:w-1/2 px-4 text-center">
+        <p className="text-xl">{statement}</p>
       </div>
-    </>
+    </PageWrapper>
   );
 };
 
-export default Home;
+export default Homepage;

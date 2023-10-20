@@ -38,3 +38,8 @@ jspm_packages
 .next
 
 .DS_Store
+
+.env
+.env.example
+.env.local
+.env.staging

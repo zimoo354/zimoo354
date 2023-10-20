@@ -1,8 +1,26 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { Header } from "@/components/header";
+import { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import { motion, AnimatePresence } from "framer-motion";
+import "./globals.css";
+import { pageTransitions } from "@/utils/animations";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
 
-export default MyApp
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div key={router.pathname}>
+        <Header />
+        <motion.main
+          className="block m-auto max-w-7xl"
+          {...pageTransitions.fadeOutIn}
+        >
+          <Component {...pageProps} />
+        </motion.main>
+      </motion.div>
+    </AnimatePresence>
+  );
+};
+
+export default App;
