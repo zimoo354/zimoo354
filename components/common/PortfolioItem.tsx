@@ -6,6 +6,7 @@ export type PortfolioItemProps = {
   imageUrl: string;
   videoUrl: string;
   link?: string;
+  using?: string[];
   rtl?: boolean;
 };
 
@@ -35,7 +36,7 @@ export const PortfolioItem = ({
           <a
             href={link}
             target="_blank"
-            className="py-4 px-8 border rounded-lg w-fit"
+            className="py-4 px-8 bg-slate-700 dark:bg-slate-500 text-white dark:text-black shadow-md rounded-lg w-fit"
           >
             See more
           </a>

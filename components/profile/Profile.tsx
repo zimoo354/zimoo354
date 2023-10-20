@@ -28,7 +28,7 @@ export const Profile = ({ homepage = false }: ProfileProps) => (
     <h1
       className={classNames(
         "font-semibold mb-2 tracking-wide text-slate-800 dark:text-slate-100 print:text-4xl",
-        homepage ? "text-8xl" : "text-6xl"
+        homepage ? "text-6xl lg:text-8xl" : "text-6xl"
       )}
     >
       {fullName}
@@ -36,7 +36,7 @@ export const Profile = ({ homepage = false }: ProfileProps) => (
     <h3
       className={classNames(
         "font-medium pl-2 print:pl-0 text-slate-500 dark:text-slate-300 tracking-wide print:text-2xl",
-        homepage ? "text-4xl" : "text-2xl"
+        homepage ? "text-3xl lg:text-4xl" : "text-2xl"
       )}
     >
       {jobTitle}

@@ -33,7 +33,7 @@ body {
 }
 
 p {
-  @apply tracking-wider leading-6 text-slate-700 dark:text-slate-200 print:text-sm;
+  @apply tracking-wider leading-6 text-slate-700 dark:text-slate-200 print:text-sm font-light;
 }
 
 .job-experience {

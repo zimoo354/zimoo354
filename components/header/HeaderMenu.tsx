@@ -7,10 +7,11 @@ const menuBarsClasses =
   "w-12 h-1 bg-black dark:bg-white absolute left-1/2 -translate-y-1/2 -translate-x-1/2 transition-all";
 const delayClasses = ["delay-100", "delay-200", "delay-300"];
 
-export const HeaderMenu = () => {
-  const [open, setOpen] = useState(false);
+export const HeaderMenu = ({ alwaysVisible = true }) => {
+  const [open, setOpen] = useState(alwaysVisible);
 
   const toggle = () => {
+    if (alwaysVisible) return;
     setOpen((isOpen) => !isOpen);
   };
 
@@ -34,26 +35,28 @@ export const HeaderMenu = () => {
           </li>
         ))}
       </ul>
-      <button
-        id="menu-trigger"
-        className=" relative h-16 w-16"
-        onClick={toggle}
-      >
-        <div
-          id="top-line"
-          className={classNames(
-            menuBarsClasses,
-            open ? "rotate-45" : "-translate-y-2"
-          )}
-        />
-        <div
-          id="bottom-line"
-          className={classNames(
-            menuBarsClasses,
-            open ? "-rotate-45" : "translate-y-2"
-          )}
-        />
-      </button>
+      {!alwaysVisible && (
+        <button
+          id="menu-trigger"
+          className=" relative h-16 w-16"
+          onClick={toggle}
+        >
+          <div
+            id="top-line"
+            className={classNames(
+              menuBarsClasses,
+              open ? "rotate-45" : "-translate-y-2"
+            )}
+          />
+          <div
+            id="bottom-line"
+            className={classNames(
+              menuBarsClasses,
+              open ? "-rotate-45" : "translate-y-2"
+            )}
+          />
+        </button>
+      )}
     </div>
   );
 };
