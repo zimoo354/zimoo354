@@ -13,6 +13,7 @@ export type PortfolioItemProps = {
 export const PortfolioItem = ({
   title,
   description,
+  imageUrl,
   videoUrl,
   link,
   rtl,
@@ -25,7 +26,13 @@ export const PortfolioItem = ({
       )}
     >
       <div className="flex justify-center w-full lg:w-1/2">
-        <video autoPlay loop src={videoUrl} className="rounded-lg shadow-md" />
+        <video
+          autoPlay
+          loop
+          poster={imageUrl}
+          src={videoUrl}
+          className="rounded-lg shadow-md"
+        />
       </div>
       <div className="flex flex-col gap-8 w-full lg:w-1/2">
         <h2 className="text-3xl font-semibold text-slate-800 dark:text-slate-100">
