@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 import { PRODUCTION } from "./lib/env";
 
 const config: Config = {
-  darkMode: PRODUCTION ? "media" : "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
