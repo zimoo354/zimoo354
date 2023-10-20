@@ -22,7 +22,7 @@ export const Profile = ({ homepage = false }: ProfileProps) => (
       width={256}
       className={classNames(
         "rounded-full shadow-md print:hidden",
-        homepage ? "w-56 mb-8" : "w-40 mb-4"
+        homepage ? "w-56 mb-8" : "w-40 mb-4 lg:block hidden"
       )}
     />
     <h1
