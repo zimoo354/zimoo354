@@ -23,6 +23,6 @@ export const socialLinks: SocialLinkProps[] = [
     image: "/images/social/resume.webp",
     title: "Resume",
     subtitle: "Click Here!",
-    url: "/pdf/CVCharlieRuiz.pdf",
+    url: "/pdf/CharlieRuiz_Resume.pdf",
   },
 ];
