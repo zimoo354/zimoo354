@@ -29,6 +29,8 @@ export const PortfolioItem = ({
         <video
           autoPlay
           loop
+          muted
+          playsInline
           poster={imageUrl}
           src={videoUrl}
           className="rounded-lg shadow-md"
