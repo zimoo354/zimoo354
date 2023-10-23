@@ -31,7 +31,7 @@ export const HeaderMenu = () => {
               delayClasses[open ? LINKS.length - idx - 1 : idx]
             )}
           >
-            <Link href={url} onClick={toggle}>
+            <Link href={url} onClick={toggle} className="hover:underline">
               {label}
             </Link>
           </li>
