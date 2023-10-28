@@ -10,17 +10,17 @@ export const ContentBlock = ({
   className,
   children,
 }: ContentBlockProps) => (
-  <div className="px-4 sm:pl-10 mb-4">
+  <div className="px-4 lg:pl-10 mb-4 print:mb-0">
     <div className="relative w-full">
-      <div className="block sm:hidden print:block mb-4">
+      {/* FOR MOBILE */}
+      <div className="block lg:hidden print:block mb-4">
         <h4 className="text-lg font-semibold uppercase text-gray-400">
           {title}
         </h4>
       </div>
-      <div className="absolute -rotate-90 w-32  text-right -left-[86px] top-14 mb-0 hidden sm:block print:hidden">
-        <h4 className="text-lg sm:text-sm font-semibold uppercase text-gray-400">
-          {title}
-        </h4>
+      {/* FOR DESKTOP */}
+      <div className="absolute -rotate-90 w-32  text-right -left-[86px] top-14 mb-0 hidden lg:block print:hidden">
+        <h4 className="font-semibold uppercase text-gray-400">{title}</h4>
       </div>
       <div className={className}>{children}</div>
     </div>

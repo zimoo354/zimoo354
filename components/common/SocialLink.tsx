@@ -1,3 +1,4 @@
+import { classNames } from "@/utils/strings";
 import Image from "next/image";
 
 export type SocialLinkProps = {
@@ -5,6 +6,7 @@ export type SocialLinkProps = {
   title: string;
   subtitle?: string;
   url: string;
+  hiddenForPrint?: boolean;
 };
 
 export const SocialLink = ({
@@ -12,8 +14,16 @@ export const SocialLink = ({
   title,
   url,
   subtitle,
+  hiddenForPrint,
 }: SocialLinkProps) => (
-  <a href={url} target="_blank" className="block w-1/2 lg:w-full">
+  <a
+    href={url}
+    target="_blank"
+    className={classNames(
+      "block w-1/2 lg:w-full",
+      hiddenForPrint ? "print:hidden" : ""
+    )}
+  >
     <div className="flex gap-4 items-center mb-4 lg:hover:translate-x-2 transition-all">
       <Image
         src={image}

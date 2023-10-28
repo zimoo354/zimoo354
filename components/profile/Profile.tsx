@@ -11,20 +11,22 @@ type ProfileProps = {
 export const Profile = ({ homepage = false }: ProfileProps) => (
   <div
     className={classNames(
-      "flex flex-col items-center text-center print:text-left print:items-start print:pl-8",
-      homepage ? "" : "lg:pl-8"
+      "flex flex-col print:pl-8",
+      homepage ? "items-center text-center" : "pl-2 lg:pl-8 print:pl-3"
     )}
   >
-    <Image
-      src="/images/profile.webp"
-      alt={fullName}
-      height={256}
-      width={256}
-      className={classNames(
-        "rounded-full shadow-md print:hidden",
-        homepage ? "w-56 mb-8" : "w-40 mb-4 lg:block hidden"
-      )}
-    />
+    {homepage && (
+      <Image
+        src="/images/profile.webp"
+        alt={fullName}
+        height={256}
+        width={256}
+        className={classNames(
+          "rounded-full shadow-md",
+          homepage ? "w-56 mb-8" : "w-40 mb-4 lg:block hidden"
+        )}
+      />
+    )}
     <h1
       className={classNames(
         "font-semibold mb-2 tracking-wide text-slate-800 dark:text-slate-100 print:text-4xl",

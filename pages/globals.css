@@ -23,7 +23,7 @@
 }
 
 html.dark:root {
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: 227, 227, 227;
   --background-rgb: 15, 23, 42;
 }
 

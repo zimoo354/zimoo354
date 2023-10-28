@@ -1,4 +1,5 @@
 import { PortfolioItemProps } from "@/components/common/PortfolioItem";
+import { skills as sk } from "./skills";
 
 export const portfolioItems: PortfolioItemProps[] = [
   {
@@ -8,7 +9,7 @@ export const portfolioItems: PortfolioItemProps[] = [
     description:
       "Acted as Tech Lead, Front End, Backend, Smart Contract and purchase flow. Built while working with Yuga Labs.",
     link: "https://kodapendant.otherside.xyz/",
-    using: ["React", "Next.JS", "JS/TS", "DynamoDB", "AWS", "Solidity"],
+    stack: [sk.jsts, sk.react, sk.next, sk.aws, sk.solidity, sk.nosql],
   },
   {
     title: "Battle.Town",
@@ -17,7 +18,7 @@ export const portfolioItems: PortfolioItemProps[] = [
     description:
       "Front End, Backend, SFX, Animations, Database optimization and Blockchain (Smart contracts) interaction. Built while working with Yuga Labs.",
     link: "https://battle.town/",
-    using: ["React", "Next.JS", "JS/TS", "PostgreSQL", "AWS", "Solidity"],
+    stack: [sk.jsts, sk.react, sk.next, sk.aws, sk.framerMotion, sk.sql],
   },
   {
     title: "Slipstream",
@@ -26,14 +27,7 @@ export const portfolioItems: PortfolioItemProps[] = [
     description:
       "Front End, Backend, Purchase flow, 3D Dynamic Model and Blockchain (Smart contracts) interaction. Built while working with Yuga Labs.",
     link: "https://10ktf.shop/",
-    using: [
-      "React",
-      "Next.JS",
-      "WebGL (3D)",
-      "JS/TS",
-      "PostgreSQL",
-      "Solidity",
-    ],
+    stack: [sk.jsts, sk.react, sk.next, sk.webGl, sk.sql],
   },
   {
     title: "Renga",
@@ -42,6 +36,6 @@ export const portfolioItems: PortfolioItemProps[] = [
     description:
       "Front End, Animations and Blockchain (Smart contracts) interaction. Built while working with Yuga Labs.",
     link: "https://renga.art/",
-    using: ["React", "Next.JS", "WebGL (3D)", "JS/TS"],
+    stack: [sk.jsts, sk.react, sk.next],
   },
 ];
