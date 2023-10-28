@@ -13,8 +13,8 @@ export const ContentBlock = ({
   <div className="px-4 lg:pl-10 mb-4 print:mb-0">
     <div className="relative w-full">
       {/* FOR MOBILE */}
-      <div className="block lg:hidden print:block mb-4">
-        <h4 className="text-lg font-semibold uppercase text-gray-400">
+      <div className="block lg:hidden print:block mb-4 print:mb-2 print:mt-2">
+        <h4 className="print:text-xs text-lg font-semibold uppercase text-gray-400">
           {title}
         </h4>
       </div>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Outfit:wght@400;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,4 +40,24 @@ p {
 
 .job-experience {
   break-inside: avoid;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Outfit, sans-serif;
+}
+
+h5,
+h6,
+li,
+a,
+button,
+span,
+div,
+td,
+dt,
+dd {
+  font-family: Inter, sans-serif;
 }
