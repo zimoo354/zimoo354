@@ -13,6 +13,6 @@ export const profile = {
     </>
   ),
   resumeStatement:
-    "I'm a SWE with 9-yoe. Proficient in Javascript/Typescript, React, Next.js, Solidity, SQL/No-SQL, AWS, and more, with diverse skills and leadership experience.",
-  location: "📍 Austin, TX",
+    "I'm a Full-stack Software Engineer with 9 years of experience specialized in creating user-centric products that drive real value by harnessing a diverse set of technologies and skills. I'm a strong communicator in both English and Spanish and I alway try to cultivate a strong work culture that translates into exceptional products and a thriving work environment.",
+  location: "Austin, TX",
 };
