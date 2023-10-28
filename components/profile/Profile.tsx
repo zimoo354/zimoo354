@@ -11,7 +11,7 @@ type ProfileProps = {
 export const Profile = ({ homepage = false }: ProfileProps) => (
   <div
     className={classNames(
-      "flex flex-col print:pl-8",
+      "flex flex-col print:pl-4",
       homepage ? "items-center text-center" : "pl-2 lg:pl-8 print:pl-3"
     )}
   >
