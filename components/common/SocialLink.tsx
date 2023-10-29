@@ -20,7 +20,7 @@ export const SocialLink = ({
     href={url}
     target="_blank"
     className={classNames(
-      "block w-1/2 lg:w-full",
+      "social-link block w-1/2 lg:w-full",
       hiddenForPrint ? "print:hidden" : ""
     )}
   >
@@ -30,7 +30,7 @@ export const SocialLink = ({
         alt={title}
         height={256}
         width={256}
-        className="rounded-2xl shadow-md w-16 print:w-8 print:rounded-md"
+        className="rounded-md shadow-md w-10 print:w-8"
       />
       <div className="flex flex-col gap-1 text-slate-700 dark:text-slate-200">
         <span className="tracking-wider">{title}</span>

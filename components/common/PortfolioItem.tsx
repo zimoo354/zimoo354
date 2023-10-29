@@ -53,9 +53,17 @@ export const PortfolioItem = ({
           <a
             href={link}
             target="_blank"
-            className="py-4 px-8 bg-slate-700 dark:bg-slate-500 text-white dark:text-black shadow-md rounded-lg w-fit"
+            className={classNames(
+              // link
+              "py-1 px-2 w-fit relative",
+              // underline decoration
+              `after:contents-[''] after:transition-all after:w-10 after:h-0 after:block after:border 
+              after:border-slate-500 after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2
+              hover:after:w-[150%] hover:after:h-[150%] hover:after:-bottom-[25%]
+            `
+            )}
           >
-            See more
+            Visit site
           </a>
         )}
       </div>
