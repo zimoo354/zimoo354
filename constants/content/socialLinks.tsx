@@ -24,5 +24,6 @@ export const socialLinks: SocialLinkProps[] = [
     title: "Resume",
     subtitle: "Click Here!",
     url: "/pdf/CharlieRuiz_Resume.pdf",
+    hiddenForPrint: true,
   },
 ];

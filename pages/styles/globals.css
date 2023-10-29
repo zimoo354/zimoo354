@@ -15,15 +15,8 @@
   }
 }
 
-@page {
-  size: auto; /* auto is the initial value */
-
-  /* this affects the margin in the printer settings */
-  margin: 8mm 8mm 8mm 8mm;
-}
-
 html.dark:root {
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: 227, 227, 227;
   --background-rgb: 15, 23, 42;
 }
 
@@ -32,10 +25,6 @@ body {
   background: rgb(var(--background-rgb));
 }
 
-p {
-  @apply tracking-wider leading-6 text-slate-700 dark:text-slate-200 print:text-sm font-light;
-}
-
-.job-experience {
-  break-inside: avoid;
-}
+@import "./noise-overlay.css";
+@import "./fonts.css";
+@import "./print.css";

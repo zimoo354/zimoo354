@@ -1,0 +1,10 @@
+@page {
+  size: auto; /* auto is the initial value */
+
+  /* this affects the margin in the printer settings */
+  margin: 8mm 8mm 8mm 8mm;
+}
+
+.job-experience {
+  break-inside: avoid;
+}
