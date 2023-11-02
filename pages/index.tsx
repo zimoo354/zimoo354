@@ -2,7 +2,7 @@ import { PageWrapper } from "@/components/common/PageWrapper";
 import { Profile } from "@/components/profile";
 import { CONTENT } from "@/constants/content";
 
-const { statement, location } = CONTENT;
+const { statement } = CONTENT;
 
 const Homepage = () => {
   return (

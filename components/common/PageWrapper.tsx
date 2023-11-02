@@ -3,6 +3,7 @@ import { classNames } from "@/utils/strings";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 import { PropsWithChildren } from "react";
+import { ContactModal } from "../header/ContactModal";
 
 type PageWrapperProps = PropsWithChildren & {
   className?: string;
@@ -20,6 +21,7 @@ export const PageWrapper = ({ children, className }: PageWrapperProps) => {
       >
         {children}
       </article>
+      <ContactModal />
     </>
   );
 };
