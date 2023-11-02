@@ -54,8 +54,14 @@ export const ContactModal = () => {
       </motion.span>
       <div
         onClick={(evt) => evt.stopPropagation()}
-        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-fit w-[480px] max-w-[95vw] bg-white border rounded-lg p-8 cursor-default"
+        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-fit w-[480px] max-w-[95vw] bg-white border rounded-lg py-8 px-4 cursor-default"
       >
+        <button
+          onClick={toggle}
+          className="absolute top-0 right-0 h-12 w-12 text-slate-500 text-xl font-light block"
+        >
+          ×
+        </button>
         <p className="text-center">
           Hi there 👋🏻
           <br />
