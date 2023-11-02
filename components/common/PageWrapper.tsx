@@ -1,4 +1,6 @@
+import { DEFAULT_SEO } from "@/constants/seo";
 import { classNames } from "@/utils/strings";
+import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 import { PropsWithChildren } from "react";
 
@@ -9,8 +11,8 @@ type PageWrapperProps = PropsWithChildren & {
 export const PageWrapper = ({ children, className }: PageWrapperProps) => {
   return (
     <>
+      <DefaultSeo {...DEFAULT_SEO} />
       <Head>
-        <title>Charlie Ruiz 🧑🏻‍💻 | Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article

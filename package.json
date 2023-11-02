@@ -15,6 +15,7 @@
     "contentful": "^10.6.2",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
+    "next-seo": "^6.4.0",
     "react": "^18",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18"
