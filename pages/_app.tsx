@@ -22,17 +22,18 @@ const App = ({ Component, pageProps }: AppProps) => {
           <Component {...pageProps} />
         </motion.main>
       </motion.div>
+      {/* Google Analytics */}
       <Script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-98280332-2"
-      />
+        src="https://www.googletagmanager.com/gtag/js?id=G-KFRPLKK9YW"
+      ></Script>
       <Script>
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-          gtag('config', 'UA-98280332-2');
+        gtag('config', 'G-KFRPLKK9YW');
         `}
       </Script>
     </AnimatePresence>
