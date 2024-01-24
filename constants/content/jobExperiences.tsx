@@ -9,7 +9,7 @@ export const jobExperiences: JobExperienceProps[] = [
     endDate: "Oct 2023",
     location: "Austin, TX (Remote)",
     children:
-      "Acted as tech lead for some projects, one of them being a web3 physical/digital collaboration with Gucci that generated ~$6 Million in revenue in 24 hours. Led the in-browser 3D efforts using WebGL. Built Opensea-like capability for our internal testnet; resulted in savings of 60 hrs/wk in QA testing effort. Worked in multiple smart-contracts life-cycle. Wrote multiple documents on team culture, beginner’s guides and tech specs. Created a tailor-made CMS for our product team. We were acquired by Yuga Labs. Designed and implemented a Blockchain + Shopify purchase flow. Used Next.js, Typescript, SQL, AWS & Solidity.",
+      "Acted as tech lead for some projects, one of them being a web3 physical/digital collaboration with Gucci that generated ~$6 Million in revenue in 24 hours. Led the in-browser 3D efforts using WebGL. Built Opensea-like capability for our internal testnet; resulted in savings of 60 hrs/wk in QA testing effort. Worked in multiple smart-contracts life-cycle. Wrote multiple documents on team culture, beginner’s guides and tech specs. Created a tailor-made CMS for our product team. Designed and implemented a Blockchain + Shopify purchase flow. Used Next.js, Typescript, SQL, AWS & Solidity.",
   },
   {
     image: "/images/work/resideo.webp",
