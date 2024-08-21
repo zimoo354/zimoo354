@@ -6,9 +6,8 @@ import { pageTransitions } from "@/utils/animations";
 import "./styles/globals.css";
 import { NoiseOverlay } from "@/components/common/NoiseOverlay";
 import Script from "next/script";
-import {
-  NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as GOOGLE_ANALYTICS_ID
-} from "@/lib/env";
+
+const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -38,7 +37,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', ${GOOGLE_ANALYTICS_ID});
+            gtag('config', '${GOOGLE_ANALYTICS_ID}');
             `}
           </Script>
         </>
