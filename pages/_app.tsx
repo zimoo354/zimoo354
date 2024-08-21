@@ -6,6 +6,9 @@ import { pageTransitions } from "@/utils/animations";
 import "./styles/globals.css";
 import { NoiseOverlay } from "@/components/common/NoiseOverlay";
 import Script from "next/script";
+import {
+  NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as GOOGLE_ANALYTICS_ID
+} from "@/lib/env";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -23,19 +26,23 @@ const App = ({ Component, pageProps }: AppProps) => {
         </motion.main>
       </motion.div>
       {/* Google Analytics */}
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-KFRPLKK9YW"
-      ></Script>
-      <Script>
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      {GOOGLE_ANALYTICS_ID && (
+        <>
+          <Script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
+          ></Script>
+          <Script>
+            {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'G-KFRPLKK9YW');
-        `}
-      </Script>
+            gtag('config', ${GOOGLE_ANALYTICS_ID});
+            `}
+          </Script>
+        </>
+      )}
     </AnimatePresence>
   );
 };
