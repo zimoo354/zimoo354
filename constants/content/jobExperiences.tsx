@@ -2,6 +2,26 @@ import { JobExperienceProps } from "@/components/common/JobExperience";
 
 export const jobExperiences: JobExperienceProps[] = [
   {
+    image: "/images/work/royal.webp",
+    jobTitle: "Software Engineer",
+    companyName: "Royal",
+    startDate: "March 2022",
+    endDate: "now",
+    location: "Austin, TX",
+    children:
+      "Led the implementation of our UI design system supporting light/dark modes and accessibility, enhancing cross-app utilization. Collaborated with design teams to craft engaging web animations using Canvas API and WebGL. Played a key role in auditing and developing smart contracts for our provenance protocol and built tools for indexing and search functionalities. Actively involved in DevOps deployment tasks, leveraging AWS to ensure efficient deployment processes.",
+  },
+  {
+    image: "/images/work/chirulabs.webp",
+    jobTitle: "Sr. Software Engineer (Contract)",
+    companyName: "Chiru Labs",
+    startDate: "Dec 2023",
+    endDate: "March 2024",
+    location: "Los Angeles, CA (Remote)",
+    children:
+      "In a three-month contract, crafted multiple front-end pages with attention to pixel-perfect design and user experience, including implementing animations. Enhanced performance by auditing and optimizing resource-heavy pages, reducing load times by 50% through advanced React functionalities and image optimization. Developed front-end and back-end components for a community raffle feature and mentored new developers in software engineering practices.",
+  },
+  {
     image: "/images/work/yuga.webp",
     jobTitle: "Sr. Software Engineer",
     companyName: "Yuga Labs",
