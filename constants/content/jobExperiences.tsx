@@ -3,7 +3,7 @@ import { JobExperienceProps } from "@/components/common/JobExperience";
 export const jobExperiences: JobExperienceProps[] = [
   {
     image: "/images/work/royal.webp",
-    jobTitle: "Software Engineer",
+    jobTitle: "Sr. Software Engineer",
     companyName: "Royal",
     startDate: "March 2022",
     endDate: "now",
