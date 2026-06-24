@@ -12,4 +12,6 @@ export const skills = {
   framerMotion: "Framer Motion",
   webGl: "WebGL (3D)",
   reactNative: "React Native",
+  rag: "RAG & Semantic Search",
+  agents: "AI Agents & Tooling",
 };

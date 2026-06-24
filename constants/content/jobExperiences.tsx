@@ -9,7 +9,7 @@ export const jobExperiences: JobExperienceProps[] = [
     endDate: "now",
     location: "Austin, TX",
     children:
-      "Led full-stack development and technical architecture across two products (Bond and DripStack). Built micropayment infrastructure using x402 (Base) and MPP (Tempo), enabling AI agents to autonomously pay for API-gated content using stablecoins (USDC). Built a RAG-powered AI agent using Mastra with long-lived workflow automation and MCP integrations. Built a hybrid search engine combining full-text and semantic search, including designing and implementing a custom embedding pipeline for long-form content indexing and retrieval. Led the team's AI-assisted development practices, implementing custom agent loops, code graphs and internal skills to accelerate delivery. Stack: Next.js, TypeScript, Node.js, PostgreSQL, EVM-based blockchains.",
+      "Spearheaded full-stack development and technical architecture across two products (Bond and DripStack). Built micropayment infrastructure using x402 (Base) and MPP (Tempo), enabling AI agents to autonomously pay for API-gated content using stablecoins (USDC). Built a RAG-powered AI agent using Mastra with long-lived workflow automation and MCP integrations. Built a hybrid search engine combining full-text and semantic search, including designing and implementing a custom embedding pipeline for long-form content indexing and retrieval. Led the team's AI-assisted development practices, implementing custom agent loops, code graphs and internal skills to accelerate delivery. Stack: Next.js, TypeScript, Node.js, PostgreSQL, EVM-based blockchains.",
   },
   {
     image: "/images/work/chirulabs.webp",
