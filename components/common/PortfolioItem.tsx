@@ -25,7 +25,7 @@ export const PortfolioItem = ({
     <div
       className={classNames(
         "flex w-full justify-evenly items-center flex-col gap-16 mb-24",
-        !rtl ? "lg:flex-row" : "lg:flex-row-reverse"
+        !rtl ? "lg:flex-row" : "lg:flex-row-reverse",
       )}
     >
       <div className="flex justify-center w-full lg:w-1/2">
@@ -40,9 +40,7 @@ export const PortfolioItem = ({
         />
       </div>
       <div className="flex flex-col gap-8 w-full lg:w-1/2">
-        <h2 className="text-3xl font-semibold text-slate-800 dark:text-slate-100">
-          {title}
-        </h2>
+        <h2 className="text-3xl font-semibold text-slate-800 dark:text-slate-100">{title}</h2>
         <p className="text-xl">{description}</p>
         <p className="flex flex-wrap gap-2">
           {stack.map((tag) => (
@@ -60,7 +58,7 @@ export const PortfolioItem = ({
               `after:contents-[''] after:transition-all after:w-10 after:h-0 after:block after:border 
               after:border-slate-500 after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2
               hover:after:w-[150%] hover:after:h-[150%] hover:after:-bottom-[25%]
-            `
+            `,
             )}
           >
             Visit site

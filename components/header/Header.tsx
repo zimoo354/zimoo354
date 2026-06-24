@@ -12,6 +12,7 @@ export const Header = () => {
           width={164}
           height={68}
           className="w-24 dark:invert dark:brightness-0"
+          loading="eager"
         />
       </Link>
       <HeaderMenu />

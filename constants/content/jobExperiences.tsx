@@ -3,13 +3,13 @@ import { JobExperienceProps } from "@/components/common/JobExperience";
 export const jobExperiences: JobExperienceProps[] = [
   {
     image: "/images/work/royal.webp",
-    jobTitle: "Sr. Software Engineer",
+    jobTitle: "Software Engineer",
     companyName: "Royal",
     startDate: "March 2022",
     endDate: "now",
     location: "Austin, TX",
     children:
-      "Led the implementation of our UI design system supporting light/dark modes and accessibility, enhancing cross-app utilization. Collaborated with design teams to craft engaging web animations using Canvas API and WebGL. Played a key role in auditing and developing smart contracts for our provenance protocol and built tools for indexing and search functionalities. Actively involved in DevOps deployment tasks, leveraging AWS to ensure efficient deployment processes.",
+      "Led full-stack development and technical architecture across two products (Bond and DripStack). Built micropayment infrastructure using x402 (Base) and MPP (Tempo), enabling AI agents to autonomously pay for API-gated content using stablecoins (USDC). Built a RAG-powered AI agent using Mastra with long-lived workflow automation and MCP integrations. Built a hybrid search engine combining full-text and semantic search, including designing and implementing a custom embedding pipeline for long-form content indexing and retrieval. Led the team's AI-assisted development practices, implementing custom agent loops, code graphs and internal skills to accelerate delivery. Stack: Next.js, TypeScript, Node.js, PostgreSQL, EVM-based blockchains.",
   },
   {
     image: "/images/work/chirulabs.webp",

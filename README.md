@@ -1,6 +1,6 @@
 # 💫 About Me:
 
-I'm a Software Engineer with 9 years of experience specialized in creating user-centric products that drive real value by harnessing a diverse set of technologies and skills. I'm a strong communicator in both English and Spanish and I alway try to cultivate a strong work culture that translates into exceptional products and a thriving work environment.
+I'm a Software Engineer with +10 years of experience specialized in creating user-centric products that drive real value by harnessing a diverse set of technologies and skills. I'm a strong communicator in both English and Spanish and I alway try to cultivate a strong work culture that translates into exceptional products and a thriving work environment.
 
 ## 🌐 Socials:
 

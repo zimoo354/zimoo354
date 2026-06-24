@@ -1,3 +1,5 @@
+"use client";
+
 import { classNames } from "@/utils/strings";
 import { motion, useSpring } from "framer-motion";
 import { MouseEventHandler, useEffect, useState } from "react";
@@ -40,7 +42,7 @@ export const ContactModal = () => {
       onMouseMove={handleMouseMove}
       className={classNames(
         "fixed h-screen w-screen top-0 left-0 bg-white/30 dark:bg-black/30 backdrop-blur-md z-10 transition-all duration-500 overflow-hidden origin-bottom cursor-pointer",
-        open ? "scale-1" : "scale-0"
+        open ? "scale-1 blur-0" : "scale-0 blur-lg",
       )}
       onKeyDown={() => {}}
     >

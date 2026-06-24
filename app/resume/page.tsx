@@ -1,5 +1,4 @@
 import { ContentBlock } from "@/components/common/ContentBlock";
-import { PageWrapper } from "@/components/common/PageWrapper";
 import { SkillTag } from "@/components/common/SkillTag";
 import { PastExperience } from "@/components/past-experience";
 import { Profile } from "@/components/profile";
@@ -7,12 +6,11 @@ import { SocialLinks } from "@/components/social-links";
 import { CONTENT } from "@/constants/content";
 
 const { resumeStatement, skills: skillsObj } = CONTENT;
-
 const skills = Object.values(skillsObj);
 
-const Resume = () => {
+export default function Resume() {
   return (
-    <PageWrapper className="flex flex-col lg:flex-row gap-8 relative">
+    <article className="min-h-fit py-8 flex flex-col lg:flex-row gap-8 relative">
       <div className="w-full lg:w-2/5 lg:min-h-screen">
         <div className="flex flex-col gap-12 print:gap-4 sticky top-12">
           <Profile />
@@ -38,8 +36,6 @@ const Resume = () => {
           <SocialLinks />
         </div>
       </div>
-    </PageWrapper>
+    </article>
   );
-};
-
-export default Resume;
+}

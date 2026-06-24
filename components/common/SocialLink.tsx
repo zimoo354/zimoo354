@@ -9,19 +9,13 @@ export type SocialLinkProps = {
   hiddenForPrint?: boolean;
 };
 
-export const SocialLink = ({
-  image,
-  title,
-  url,
-  subtitle,
-  hiddenForPrint,
-}: SocialLinkProps) => (
+export const SocialLink = ({ image, title, url, subtitle, hiddenForPrint }: SocialLinkProps) => (
   <a
     href={url}
     target="_blank"
     className={classNames(
       "social-link block w-1/2 lg:w-full",
-      hiddenForPrint ? "print:hidden" : ""
+      hiddenForPrint ? "print:hidden" : "",
     )}
   >
     <div className="flex gap-4 items-center mb-4 lg:hover:translate-x-2 transition-all">
@@ -34,9 +28,7 @@ export const SocialLink = ({
       />
       <div className="flex flex-col gap-1 text-slate-700 dark:text-slate-200">
         <span className="tracking-wider">{title}</span>
-        <span className="text-xs tracking-wider hidden sm:block">
-          {subtitle || url}
-        </span>
+        <span className="text-xs tracking-wider hidden sm:block">{subtitle || url}</span>
       </div>
     </div>
   </a>

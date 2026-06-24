@@ -1,3 +1,7 @@
+@import "./noise-overlay.css";
+@import "./fonts.css";
+@import "./print.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,7 +28,3 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
-
-@import "./noise-overlay.css";
-@import "./fonts.css";
-@import "./print.css";

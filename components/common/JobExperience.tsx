@@ -37,9 +37,7 @@ export const JobExperience = ({
             {startDate} → {endDate}
           </span>{" "}
           <span className="hidden print:inline"> | </span>
-          <span className=" mt-2 print:-mt-0 lg:mt-0 inline-block">
-            {location}
-          </span>
+          <span className=" mt-2 print:-mt-0 lg:mt-0 inline-block">{location}</span>
         </span>
       </div>
     </div>
