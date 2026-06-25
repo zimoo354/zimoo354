@@ -1,3 +1,5 @@
+import { blog } from "./blog";
+
 export const LINKS = [
   {
     label: "Resume",
@@ -7,6 +9,14 @@ export const LINKS = [
     label: "Portfolio",
     url: "/portfolio",
   },
+  ...(blog.substackUrl
+    ? [
+        {
+          label: "Blog",
+          url: "/blog",
+        },
+      ]
+    : []),
   {
     label: "Contact",
     url: "#contact",
