@@ -60,12 +60,12 @@ export default function Blog() {
       <p className="text-lg text-slate-600 dark:text-slate-300 mb-12 max-w-2xl text-center mx-auto">
         {channel?.description ?? "I also write things."} Read more on{" "}
         <a
-          href={blog.substackUrl}
+          href={blog.siteUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-slate-800 dark:hover:text-slate-100 transition-colors"
         >
-          {channel?.title ?? "Substack"}
+          {channel?.title ?? "blog"}
         </a>
         .
       </p>
@@ -80,8 +80,8 @@ export default function Blog() {
         <div className="flex justify-center py-16">
           <p className="text-red-500">
             Could not load posts. Visit{" "}
-            <a href={blog.substackUrl} target="_blank" className="underline">
-              Substack
+            <a href={blog.siteUrl} target="_blank" className="underline">
+              blog
             </a>{" "}
             directly.
           </p>

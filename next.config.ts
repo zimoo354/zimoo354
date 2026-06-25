@@ -3,11 +3,11 @@ import { blog } from "./constants/content/blog";
 
 const nextConfig: NextConfig = {};
 
-if (blog.substackUrl) {
+if (blog.rssFeedUrl) {
   nextConfig.rewrites = async () => [
     {
       source: "/blog/feed",
-      destination: `${blog.substackUrl}/feed`,
+      destination: blog.rssFeedUrl,
     },
   ];
 }

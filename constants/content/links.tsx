@@ -9,7 +9,7 @@ export const LINKS = [
     label: "Portfolio",
     url: "/portfolio",
   },
-  ...(blog.substackUrl
+  ...(blog.rssFeedUrl
     ? [
         {
           label: "Blog",
