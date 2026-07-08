@@ -5,7 +5,7 @@ export const jobExperiences: JobExperienceProps[] = [
     image: "/images/work/royal.webp",
     jobTitle: "Software Engineer",
     companyName: "Royal",
-    startDate: "March 2022",
+    startDate: "March 2024",
     endDate: "now",
     location: "Austin, TX",
     children:
